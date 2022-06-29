@@ -3,7 +3,6 @@ framework: mocha
 preRun:
      command:
         - npm ci
-        - npm run build
 preMerge:
   pattern:
     - "./test/specs/**/*.spec.js"
