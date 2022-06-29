@@ -2,16 +2,15 @@
 framework: mocha
 preRun:
      command:
-        - npm ci
+        - npm install
 preMerge:
   pattern:
-    - "./test/specs/*/*.spec.js"
-    - "./test/specs/*.spec.js"
-    - "./test/unit/*.js"
-
+    - test/unit/**/*.js
 postMerge:
-  pattern:
-   - "./test/specs/*/*.spec.js"
-   - "./test/specs/*.spec.js"
-   - "./test/unit/*.js"
+  pattern: 
+    - test/unit/**/*.js
+postRun:
+     command:
+        - node --version
+configFile: mocharc.yml
 version: 1.0
