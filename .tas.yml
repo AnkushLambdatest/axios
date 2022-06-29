@@ -12,6 +12,6 @@ preMerge:
 postMerge:
   pattern:
    - "./test/specs/**/*.spec.js"
-    - "./test/specs/*.spec.js"
-    - "./test/unit/*.js"
+   - "./test/specs/*.spec.js"
+   - "./test/unit/*.js"
 version: 1.0
